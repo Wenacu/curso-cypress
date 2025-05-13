@@ -1,10 +1,12 @@
+const { HomeMethods } = require("./pages/home/home.methods")
 const { LoginMethods } = require("./pages/login/login.methods")
 
 describe('template spec', () => {
   it('passes', () => {
     cy.visit('https://demoblaze.com/')
-    cy.get('a[data-target="#logInModal"]').click()
-    LoginMethods.login('username','password')
+    //cy.get('a[data-target="#logInModal"]').click()
+    //LoginMethods.login('username','password')
+    HomeMethods.clickOnProductLink('Iphone 6 32gb')
     cy.wait(5000)
 
   })
