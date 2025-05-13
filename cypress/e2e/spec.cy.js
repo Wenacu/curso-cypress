@@ -1,4 +1,4 @@
-const { LoginMethods } = require("./pages/login.methods")
+const { LoginMethods } = require("./pages/login/login.methods")
 
 describe('template spec', () => {
   it('passes', () => {
