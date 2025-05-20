@@ -41,4 +41,8 @@ static generateRandomString(length=10){
     }
     return result; 
 }
+
+ static verifySignedUser(username){
+CommonPageElements.signedUser.should('have.text', `Welcome ${username}`)
+}
 }
