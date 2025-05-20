@@ -23,4 +23,10 @@ static clickOnLoginOption(){
 static clickOnSignOption(){
     CommonPageElements.topMenu.signup.click();
 }
+
+static verifyAlert(expectedMessage){
+    cy.on('window:alert',(str)=>{
+        expect(str).to.equal(expectedMessage)
+    });
+}
 }
