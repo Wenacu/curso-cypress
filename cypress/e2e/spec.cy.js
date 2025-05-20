@@ -23,7 +23,7 @@ describe('template spec', () => {
      cy.get('a#nameofuser').should('contain.text', usuario)
 
     //HomeMethods.clickOnProductLink('Iphone 6 32gb')
-      cy.wait(30000)
+      cy.wait(5000)
     //CartMethods.clickOnDeleteLink('Nokia lumia 1520')
    // cy.wait(30000)
 

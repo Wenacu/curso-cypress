@@ -5,7 +5,8 @@ static get url(){
 
 static get testSuites(){
     return{
-        registroYAutenticacion:'Registro y Autenticación', 
+        registro:'Registro', 
+        autenticacion: 'Autenticación',
         catalogoYCompra: 'Catálogo y Compras',
     };
 }
