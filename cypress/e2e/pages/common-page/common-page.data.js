@@ -7,7 +7,7 @@ static get testSuites(){
     return{
         registro:'Registro', 
         autenticacion: 'Autenticación',
-        catalogoYCompra: 'Catálogo y Compras',
+        catalogoYCompras: 'Catálogo y Compras',
     };
 }
 }

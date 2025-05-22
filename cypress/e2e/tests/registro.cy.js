@@ -4,11 +4,11 @@ import { LoginData } from "../pages/login/login.data";
 import { SignupMethods } from "../pages/signup/signup.methods";
 import { Logger } from "../pages/util/logger";
 
-const user=CommonPageMethods.generateRandomString(10); 
+const user=CommonPageMethods.generateRandomString(); 
 const password=CommonPageMethods.generateRandomString(7);
 const existingUser=LoginData.validCredentials.username
 
-describe(CommonPageData.testSuites.registroYAutenticacion, ()=>{
+describe(CommonPageData.testSuites.registro, ()=>{
     it('Registro de usuario válido',()=>{
         Logger.stepNumber(1)
         Logger.step('Navegar a la página de inicio')

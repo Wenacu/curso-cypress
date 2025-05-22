@@ -3,7 +3,7 @@ const { HomeMethods } = require("./pages/home/home.methods")
 const { LoginMethods } = require("./pages/login/login.methods")
 const { Logger } = require("./pages/util/logger")
 
-describe('template spec', () => {
+/*describe('template spec', () => {
   it('passes', () => {
     const usuario='random01'; 
     const contrasena='random01'; 
@@ -28,4 +28,4 @@ describe('template spec', () => {
    // cy.wait(30000)
 
   })
-})
+})*/
