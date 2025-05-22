@@ -4,6 +4,7 @@ import { CommonPageElements } from "./common-page.element";
 export class CommonPageMethods{
 static navigateToDemoBlaze(){
     cy.visit(CommonPageData.url); 
+    CommonPageMethods.clickOnHomeOption(); 
 }
 static clickOnHomeOption(){
     CommonPageElements.topMenu.home.click();
