@@ -56,7 +56,7 @@ CommonPageElements.signedUser.should('have.text', `Welcome ${username}`)
 
 static logout(){
 cy.get('body').then($body=>{
-    if($body.find('#logout2').length>0){
+    if($body.find('#logout2[stylye="display: block;"]').length>0){
     CommonPageElements.topMenu.logout.click(); 
     }
 })
