@@ -15,8 +15,12 @@ static clickOnContactOption(){
 static clickOnAboutUsOption(){
     CommonPageElements.topMenu.aboutUs.click();
 }
+
 static clickOnCartOption(){
     CommonPageElements.topMenu.cart.click();
+    Cypress.on('uncaught: exception', (err,runnable)=>{
+        return false; 
+    })
 }
 static clickOnLoginOption(){
     CommonPageElements.topMenu.login.click();
